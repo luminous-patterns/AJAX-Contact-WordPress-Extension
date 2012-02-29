@@ -64,11 +64,11 @@ function iwacontact_get_contact_form( $post_id ) {
 				$submitted_value = ( is_array( $_POST[$field_vars['element_id']] ) ) ? join( ',', $_POST[$field_vars['element_id']] ) : $_POST[$field_vars['element_id']];
 				
 				if ( $field_vars['fieldrequired'] == '1' && empty( $submitted_value ) ) {
-					$field_error = '<span class="ajax-feedback error" style="display: inline;">This field is required</span>';
+					$field_error = '<span class="ajax-feedback error" style="display: inline;">' . __( "This field is required", 'iwacontact' ) . '</span>';
 					$error = true;
 				}
 				elseif ( $field_vars['fieldvalidation'] == 'email' && !preg_match( '/^[A-Z0-9._%-]+@[A-Z0-9._%-]+.[A-Z]{2,4}$/i', $submitted_value ) ) {
-					$field_error = '<span class="ajax-feedback error" style="display: inline;">Please enter a valid email address</span>';
+					$field_error = '<span class="ajax-feedback error" style="display: inline;">' . __( "Please enter a valid email address", 'iwacontact' ) . '</span>';
 					$error = true;
 				}
 				
@@ -248,7 +248,7 @@ function iwacontact_get_contact_form( $post_id ) {
 		$submit_disabled = '';
 		
 		if ( key_exists( 'iwac_form_id', $_POST ) && $_POST['iwac_form_id'] == $post_id && !$error ) {
-			$ajax_result = 'Your message has been sent successfully!';
+			$ajax_result = __( "Your message has been sent successfully!", 'iwacontact' );
 			$ajax_display = 'style="display: inline;"';
 			$submit_disabled = 'disabled="disabled"';
 		}

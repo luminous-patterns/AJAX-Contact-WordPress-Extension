@@ -44,7 +44,7 @@ function iwacontactConstruct( jQuery_obj ) {
 
 				// Validate the form submission
 				if ( !contactObj._validateSubmission() ) {
-					contactObj._displayFormError( "There was an error processing your request" );
+					contactObj._displayFormError( objectL10n.validationError );
 					return false;
 				}
 				
@@ -73,13 +73,13 @@ function iwacontactConstruct( jQuery_obj ) {
 				if ( jQuery( this ).hasClass( 'required-field' ) && ( jQuery( this ).val() == '' || jQuery( this ).val() == null ) ) {
 					validationError = true;
 					jQuery( this ).addClass( 'error' );
-					jQuery( this ).after( '<span class="ajax-feedback error">This field is required</span>' );
+					jQuery( this ).after( '<span class="ajax-feedback error">' + objectL10n.requiredField + '</span>' );
 					jQuery( this ).parent().children( '.ajax-feedback' ).fadeIn();
 				}
 				else if ( jQuery( this ).hasClass( 'validate-email' ) && !jQuery( this ).val().match( /^[A-Z0-9._%-]+@[A-Z0-9._%-]+.[A-Z]{2,4}$/i ) ) {
 					validationError = true;
 					jQuery( this ).addClass( 'error' );
-					jQuery( this ).after( '<span class="ajax-feedback error">Please enter a valid email address</span>' );
+					jQuery( this ).after( '<span class="ajax-feedback error">' + objectL10n.enterValidAddress + '</span>' );
 					jQuery( this ).parent().children( '.ajax-feedback' ).fadeIn();
 				}
 				
@@ -109,7 +109,7 @@ function iwacontactConstruct( jQuery_obj ) {
 				},
 				success: function( json ) {
 					if ( json.status == 'success' ) {
-						contactForm.find( '.buttons .ajax-result' ).html( "Your message has been sent successfully!" );
+						contactForm.find( '.buttons .ajax-result' ).html( objectL10n.success );
 						contactForm.find( '.buttons .ajax-result' ).fadeIn();
 						contactForm.find( ':input' ).attr( 'disabled', 'disabled' );
 						contactForm.find( '.buttons input[name=iwac_submit]' ).addClass( 'disabled' );

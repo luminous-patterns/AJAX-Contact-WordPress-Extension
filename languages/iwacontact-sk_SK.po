@@ -1,0 +1,550 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ajax-contact\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-25 15:18+0100\n"
+"PO-Revision-Date: 2012-02-25 15:23+0100\n"
+"Last-Translator: Martin Krcho <martin.krcho@gmail.com>\n"
+"Language-Team: MojAndroid.sk <mojandroidsk@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;_n;__\n"
+"X-Poedit-Basepath: /Users/user/Localhost/beta/wp-content/plugins/ajax-contact/\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: Slovak\n"
+"X-Poedit-Country: SLOVAKIA\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ajax-settings.php:6
+msgid "AJAX Contact Settings"
+msgstr ""
+
+#: ajax-settings.php:9
+msgid "AJAX Contact"
+msgstr ""
+
+#: ajax-settings.php:18
+msgid "General"
+msgstr ""
+
+#: ajax-settings.php:26
+msgid "Default From Address"
+msgstr ""
+
+#: ajax-settings.php:33
+msgid "Default To Address"
+msgstr ""
+
+#: ajax-settings.php:40
+msgid "Default Subject"
+msgstr ""
+
+#: ajax-settings.php:41
+msgid "New contact form submission!"
+msgstr ""
+
+#: ajax-settings.php:47
+msgid "Default Submit Button Text"
+msgstr ""
+
+#: ajax-settings.php:48
+msgid "Send Enquiry"
+msgstr ""
+
+#: ajax-settings.php:54
+msgid "Default URL redirect on submission"
+msgstr ""
+
+#: ajax-settings.php:60
+msgid "Spam Prevention"
+msgstr ""
+
+#: ajax-settings.php:66
+msgid "Default Anti-bot Validation"
+msgstr ""
+
+#: ajax-settings.php:70
+#: form-admin.php:117
+msgid "Honeypot"
+msgstr ""
+
+#: ajax-settings.php:71
+#: form-admin.php:118
+msgid "Google ReCAPTCHA"
+msgstr ""
+
+#: ajax-settings.php:79
+msgid "Enable by default"
+msgstr ""
+
+#: ajax-settings.php:82
+msgid "Yes, enable Anti-bot Validation by default on new forms"
+msgstr ""
+
+#: ajax-settings.php:90
+msgid "ReCAPTCHA Public Key"
+msgstr ""
+
+#: ajax-settings.php:91
+#, php-format
+msgid "Enter your ReCAPTCHA Public Key here.  If you don't already have one, <a href=\"%1$s\" target=\"_blank\">click here to get one</a>"
+msgstr ""
+
+#: ajax-settings.php:97
+msgid "ReCAPTCHA Private Key"
+msgstr ""
+
+#: ajax-settings.php:98
+msgid "Enter your ReCAPTCHA Private Key here."
+msgstr ""
+
+#: form-admin.php:27
+msgid "Form Editor"
+msgstr ""
+
+#: form-admin.php:28
+msgid "Email Editor"
+msgstr ""
+
+#: form-admin.php:31
+msgid "Form Configuration"
+msgstr ""
+
+#: form-admin.php:32
+msgid "Form Anti-Spam"
+msgstr ""
+
+#: form-admin.php:33
+msgid "Form Shortcode"
+msgstr ""
+
+#: form-admin.php:34
+msgid "Recent Submissions"
+msgstr ""
+
+#: form-admin.php:39
+msgid "Submission Details"
+msgstr ""
+
+#: form-admin.php:40
+msgid "Submission Email Body"
+msgstr ""
+
+#: form-admin.php:55
+#: form-admin.php:58
+#: form-admin.php:60
+#: form-admin.php:61
+#: form-admin.php:62
+#: form-admin.php:63
+#: form-admin.php:64
+msgid "Form saved."
+msgstr ""
+
+#: form-admin.php:56
+msgid "Custom field saved."
+msgstr ""
+
+#: form-admin.php:57
+msgid "Custom field deleted."
+msgstr ""
+
+#: form-admin.php:108
+msgid "Enable Anti-Bot validation"
+msgstr ""
+
+#: form-admin.php:114
+msgid "Anti-Bot validation type"
+msgstr ""
+
+#: form-admin.php:141
+msgid "You can specify a custom body for email notifications sent using this form."
+msgstr ""
+
+#: form-admin.php:147
+msgid "Use a custom email body"
+msgstr ""
+
+#: form-admin.php:157
+#, php-format
+msgid "Include your field values by wrapping the <strong>Field ID</strong> in double percentage symbols.  E.g. to include the submitted value for a field with a Field ID of \"your_name\" you would use %%your_name%%"
+msgstr ""
+
+#: form-admin.php:185
+msgid "Send Submissions To"
+msgstr ""
+
+#: form-admin.php:190
+msgid "From Address"
+msgstr ""
+
+#: form-admin.php:195
+msgid "Subject Line"
+msgstr ""
+
+#: form-admin.php:200
+msgid "Submit Button Text"
+msgstr ""
+
+#: form-admin.php:205
+msgid "URL redirect on submission"
+msgstr ""
+
+#: form-admin.php:226
+msgid "Use the shortcode to add this form to any post or page"
+msgstr ""
+
+#: form-admin.php:251
+msgid "No submissions have been made using this form yet."
+msgstr ""
+
+#: form-admin.php:260
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: form-admin.php:293
+msgid "Form Fields"
+msgstr ""
+
+#: form-admin.php:294
+msgid "Add New Field"
+msgstr ""
+
+#: form-admin.php:350
+msgid "Enter the default value for this field or leave empty for no default value."
+msgstr ""
+
+#: form-admin.php:351
+msgid "You may also use [[the_title]] or [[the_id]] to include the current post/page title or ID in the default field value."
+msgstr ""
+
+#: form-admin.php:354
+msgid "Enter the options the user will be asked to select from, one option per line."
+msgstr ""
+
+#: form-admin.php:355
+msgid "You may also use [[the_title]] or [[the_id]] to include the current post/page title or ID in an option."
+msgstr ""
+
+#: form-admin.php:358
+msgid "The email address to send form submissions to"
+msgstr ""
+
+#: form-admin.php:361
+msgid "The email address submissions will appear to have been sent from"
+msgstr ""
+
+#: form-admin.php:364
+msgid "The subject line of form emails sent using this form"
+msgstr ""
+
+#: form-admin.php:367
+msgid "The submit button text for the form submit button"
+msgstr ""
+
+#: form-admin.php:370
+msgid "If you would like the user to be redirected to another url (e.g. Thank-you page) when they have submitted the form, enter the URL here"
+msgstr ""
+
+#: form-admin.php:373
+msgid "Copy and paste this short code in to the body of any page or post to embed this form in that location"
+msgstr ""
+
+#: form-admin.php:374
+msgid "Don't forget to use http:// if external to this website"
+msgstr ""
+
+#: form-admin.php:421
+msgid "Submitted on"
+msgstr ""
+
+#: form-admin.php:425
+msgid "Contact Form"
+msgstr ""
+
+#: form-admin.php:429
+#: functions.php:23
+msgid "Edit Form"
+msgstr ""
+
+#: form-admin.php:429
+msgid "View Submissions"
+msgstr ""
+
+#: form-admin.php:580
+#: form-admin.php:600
+msgid "New Field"
+msgstr ""
+
+#: form-admin.php:585
+msgid "Required"
+msgstr ""
+
+#: form-admin.php:608
+#: form-admin.php:615
+#: form-admin.php:629
+msgid "Default Value <span class=\"iwacf-help help-default\"></span>"
+msgstr ""
+
+#: form-admin.php:620
+msgid "Options (1 per line) <span class=\"iwacf-help help-options\"></span>"
+msgstr ""
+
+#: form-admin.php:634
+msgid "Field Editor"
+msgstr ""
+
+#: form-admin.php:636
+msgid "Field Title"
+msgstr ""
+
+#: form-admin.php:640
+msgid "Field ID"
+msgstr ""
+
+#: form-admin.php:644
+msgid "Field Type"
+msgstr ""
+
+#: form-admin.php:654
+msgid "Display Order"
+msgstr ""
+
+#: form-admin.php:658
+msgid "Validator"
+msgstr ""
+
+#: form-admin.php:666
+msgid "Field required"
+msgstr ""
+
+#: form-admin.php:670
+msgid "Show label"
+msgstr ""
+
+#: form-admin.php:673
+msgid "Delete Field"
+msgstr ""
+
+#: form-admin.php:693
+msgid "Normal Fields"
+msgstr ""
+
+#: form-admin.php:694
+msgid "Text Input"
+msgstr ""
+
+#: form-admin.php:695
+msgid "Text Input (Password)"
+msgstr ""
+
+#: form-admin.php:696
+msgid "Text Input (Multi-Line)"
+msgstr ""
+
+#: form-admin.php:697
+msgid "Text Input (Read-Only)"
+msgstr ""
+
+#: form-admin.php:698
+msgid "Select Box"
+msgstr ""
+
+#: form-admin.php:699
+msgid "Select Box (Multiple)"
+msgstr ""
+
+#: form-admin.php:700
+msgid "Check Box"
+msgstr ""
+
+#: form-admin.php:701
+msgid "Radio Buttons"
+msgstr ""
+
+#: form-admin.php:702
+msgid "Hidden Field"
+msgstr ""
+
+#: form-admin.php:703
+msgid "File Upload"
+msgstr ""
+
+#: form-admin.php:714
+msgid "Headings"
+msgstr ""
+
+#: form-admin.php:715
+msgid "Heading 1"
+msgstr ""
+
+#: form-admin.php:716
+msgid "Heading 2"
+msgstr ""
+
+#: form-admin.php:717
+msgid "Heading 3"
+msgstr ""
+
+#: form-admin.php:718
+msgid "Heading 4"
+msgstr ""
+
+#: form-admin.php:767
+#: form-admin.php:850
+#: functions.php:52
+msgid "Submissions"
+msgstr ""
+
+#: form-admin.php:768
+msgid "Fields"
+msgstr ""
+
+#: form-admin.php:769
+msgid "Short code"
+msgstr ""
+
+#: form-admin.php:819
+#, php-format
+msgid "View Submissions (%1$d)"
+msgstr ""
+
+#: form-display.php:67
+#: functions.php:89
+msgid "This field is required"
+msgstr "Toto pole je povinné"
+
+#: form-display.php:71
+#: functions.php:90
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: form-display.php:251
+#: functions.php:91
+msgid "Your message has been sent successfully!"
+msgstr ""
+
+#: form-display.php:386
+msgid "Invalid CAPTCHA, please try again."
+msgstr ""
+
+#: form-display.php:416
+#, php-format
+msgid "There has been a new contact form submission at %1$s"
+msgstr ""
+
+#: form-display.php:452
+#, php-format
+msgid "You left a required field <span>%1$s</strong> empty"
+msgstr ""
+
+#: form-display.php:454
+#, php-format
+msgid "Invalid email address provided for <span>%1$s</strong>"
+msgstr ""
+
+#: functions.php:17
+msgid "All Forms"
+msgstr ""
+
+#: functions.php:18
+msgid "Forms"
+msgstr ""
+
+#: functions.php:19
+msgid "Form"
+msgstr ""
+
+#: functions.php:20
+#: functions.php:21
+msgid "Add New Form"
+msgstr ""
+
+#: functions.php:22
+#: functions.php:56
+msgid "Edit"
+msgstr ""
+
+#: functions.php:24
+msgid "New Form"
+msgstr ""
+
+#: functions.php:25
+#: functions.php:59
+msgid "View"
+msgstr ""
+
+#: functions.php:26
+msgid "View Form"
+msgstr ""
+
+#: functions.php:27
+msgid "Search Forms"
+msgstr ""
+
+#: functions.php:28
+msgid "No forms found"
+msgstr ""
+
+#: functions.php:29
+msgid "No forms found in Trash"
+msgstr ""
+
+#: functions.php:30
+msgid "Contact Forms"
+msgstr ""
+
+#: functions.php:32
+msgid "AJAX Contact Forms"
+msgstr ""
+
+#: functions.php:51
+msgid "All Submissions"
+msgstr ""
+
+#: functions.php:53
+msgid "Submission"
+msgstr ""
+
+#: functions.php:54
+msgid "Add New"
+msgstr ""
+
+#: functions.php:55
+msgid "Add New Submission"
+msgstr ""
+
+#: functions.php:57
+msgid "Edit Submission"
+msgstr ""
+
+#: functions.php:58
+msgid "New Submission"
+msgstr ""
+
+#: functions.php:60
+msgid "View Submission"
+msgstr ""
+
+#: functions.php:61
+msgid "Search Submissions"
+msgstr ""
+
+#: functions.php:62
+msgid "No submissions found"
+msgstr ""
+
+#: functions.php:63
+msgid "No submissions found in Trash"
+msgstr ""
+
+#: functions.php:65
+msgid "AJAX Contact Form Submissions"
+msgstr ""
+
+#: functions.php:88
+msgid "There was an error processing your request"
+msgstr "Pri spracovaní vašej požiadavky došlo k chybe"
+

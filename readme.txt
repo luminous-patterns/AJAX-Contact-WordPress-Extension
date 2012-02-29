@@ -36,6 +36,12 @@ Easily add AJAX contact forms to any page, post or widget area with an unlimited
             <li>Google ReCAPTCHA</li>
         </ul>
     </li>
+    <li>Multi-Language Support
+        <ul>
+            <li>English</li>
+            <li>Slovak by Martin Krcho (www.mojandroid.sk)</li>
+        </ul>
+    </li>
   </ul>
 </li>
 <li>Field Types
@@ -101,8 +107,9 @@ You may be having trouble sending emails due to hosting restrictions, you might 
 
 == Changelog ==
 
-= 2.0.2 =
-* Fix non-english letters reversion
+= 2.0.3 =
+* Enhanced multi-language support added by Martin Krcho (www.mojandroid.sk)
+* Slovak translations added by Martin Krcho (www.mojandroid.sk)
 
 = 2.0.1 =
 * Fix last update date on WordPress.org
@@ -163,6 +170,9 @@ You may be having trouble sending emails due to hosting restrictions, you might 
 * Minor Bug Fixes
 
 == Upgrade Notice ==
+
+= 2.0.3 =
+Update for improved multi-language support and Slovak translation by Martin Krcho (www.mojandroid.sk)
 
 = 2.0.1 =
 From v2 - Lots of core changes, custom email bodys, form submission logging, new anti-spam including Google ReCAPTCHA, better ajax handling, default settings and heaps more.  Worth the upgrade.

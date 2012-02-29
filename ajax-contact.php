@@ -4,7 +4,7 @@ Plugin Name: AJAX Contact
 Plugin URI: http://www.mycetophorae.com/wordpress-extensions/ajax-contact/
 Description: Use this plugin to be easily able to add a AJAX Contact forms to pages, posts and widget areas
 Author: Callan Milne
-Version: 2.0.2
+Version: 2.0.3
 Author URI: http://www.mycetophorae.com
 Copyright 2011 Callan Milne
 

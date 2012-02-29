@@ -81,8 +81,16 @@ function iwacontact_init() {
 
 	wp_register_style( 'ajax-contact-css', plugin_dir_url( __FILE__ ) . 'css/ajax-contact.css' );
 	wp_register_script( 'ajax-contact', plugin_dir_url( __FILE__ ) . 'js/ajax-contact.js', array( 'jquery' ) );
+	
 	wp_enqueue_style( 'ajax-contact-css' );
 	wp_enqueue_script( 'ajax-contact' );
+	wp_localize_script( 'ajax-contact', 'objectL10n', array(
+		'validationError' => __( "There was an error processing your request", 'iwacontact' ),
+		'requiredField' => __( "This field is required", 'iwacontact' ),
+		'enterValidAddress' => __( "Please enter a valid email address", 'iwacontact' ),
+		'success' => __( "Your message has been sent successfully!", 'iwacontact' )
+	) );
+	
 }
 
 /**
