@@ -1,0 +1,99 @@
+div.icon32-posts-iwacontactform { background: transparent url('../images/post-type-icon-big.png') no-repeat top left !important; }
+
+#iwajax_contact #formFields { background-color: #f5f5f5; border: 1px solid #ddd; box-shadow: 1px 5px 5px rgba(0,0,0,0.1); margin: 15px 5px 20px; min-height: 500px; position: relative; }
+#iwajax_contact div.form-field h2 { background: transparent url('../images/edit-config-big.png') no-repeat 0 5px; padding-left: 60px; margin-left: 5px; margin-top: 0; border-bottom: 1px solid #ddd; margin-right: 5px; }
+
+span.iwacf-help { background: transparent url('../images/help.png') no-repeat center center; display: inline-block; -moz-opacity: 0.5; opacity: 0.5; width: 16px; height: 16px; vertical-align: middle; }
+span.iwacf-help:hover { -moz-opacity: 1.0; opacity: 1.0; }
+div.iwacf-tooltip { background-color: #f5f5f5; border: 1px solid #ccc; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 1px 1px 3px rgba(0,0,0,0.15); -webkit-box-shadow: 1px 1px 3px rgba(0,0,0,0.15); box-shadow: 1px 1px 3px rgba(0,0,0,0.15); color: #000; line-height: 20px; max-width: 200px; padding: 10px; position: absolute; z-index: 1000; }
+div.iwacf-tooltip p { line-height: 20px; }
+
+#iwajax_contact input { outline: none; }
+#iwajax_contact label em { font-weight: normal !important; margin-left: 5px; }
+
+#iwajax_contact h2.fields-title { background-color: #eee; border-bottom: 1px solid #ddd; margin: 0; padding: 5px 10px; }
+#iwajax_contact div.fields-listing { background-color: #fff; border-right: 1px solid #ccc; display: inline-block; width: 67%; height: 600px; overflow-x: hidden; overflow-y: scroll; position: relative; vertical-align: top; }
+#iwajax_contact #fieldDisplays { padding: 10px; }
+#iwajax_contact input.rightbutton { float: right; margin: 5px 0; }
+#iwajax_contact input.addFieldButton.rightbutton { margin: 3px 0px; }
+
+#iwajax_contact div.inside p.config { width: 260px; display: inline-block; }
+#iwajax_contact div.inside p.config input { margin: 10px 0 0; width: 250px; }
+
+#iwajax_contact div.inside p.iwca-wide { width: 525px; display: inline-block; }
+#iwajax_contact div.inside p.iwca-wide input { margin: 10px 0 0; width: 525px; }
+
+#iwajax_contact div.form-field { background-color: #f5f5f5; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; display: inline-block; width: 30%; padding: 5px; vertical-align: top; }
+#iwajax_contact div.form-field p { margin-top: 10px; padding-left: 10px; }
+
+#iwajax_contact li.placeholder { background-color: #f5f5f5; border: 1px dashed #ddd; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding: 0 10px 0 30px; margin: 0 0 10px 10px; width: 240px; }
+
+#iwajax_contact li.field-display { border: 1px solid #ddd; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: #fff url('images/field-icons/ui-input.png') no-repeat 6px 6px; box-shadow: 1px 3px 3px rgba(0,0,0,0.05); cursor: move; line-height: 28px; padding: 0 10px 0 30px; margin: 0 0 10px 0; }
+#iwajax_contact li.field-display:hover { background-color: #f5f5f5; }
+#iwajax_contact li.field-display span.required { color: #999; display: none; float: right; font-size: 0.9em; text-transform: uppercase; }
+#iwajax_contact li.field-display.required span.required { display: inline-block; }
+
+#iwajax_contact li.field-display.selected { background-color: #666; border-color: #444; box-shadow: 1px 3px 3px rgba(0,0,0,0.05); }
+#iwajax_contact li.field-display.selected a { color: #fff; font-weight: bold; text-decoration: none; }
+#iwajax_contact li.field-display.selected span.required { color: #ccc; }
+
+#iwajax_contact li.icon-input { background-image: url('../images/field-icons/ui-input.png'); }
+#iwajax_contact li.icon-password { background-image: url('../images/field-icons/ui-password.png'); }
+#iwajax_contact li.icon-radio { background-image: url('../images/field-icons/ui-radio.png'); }
+#iwajax_contact li.icon-checkbox { background-image: url('../images/field-icons/ui-checkbox.png'); }
+#iwajax_contact li.icon-selectbox { background-image: url('../images/field-icons/ui-selectbox.png'); }
+#iwajax_contact li.icon-multiselect { background-image: url('../images/field-icons/ui-multiselect.png'); }
+#iwajax_contact li.icon-textarea { background-image: url('../images/field-icons/ui-textarea.png'); }
+#iwajax_contact li.icon-email { background-image: url('../images/field-icons/ui-email.png'); }
+#iwajax_contact li.icon-hidden { background-image: url('../images/field-icons/ui-hidden.png'); }
+#iwajax_contact li.icon-sendcopy { background-image: url('../images/field-icons/ui-sendcopy.png'); }
+#iwajax_contact li.icon-h1 { background-image: url('../images/field-icons/ui-h1.png'); }
+#iwajax_contact li.icon-h2 { background-image: url('../images/field-icons/ui-h2.png'); }
+#iwajax_contact li.icon-h3 { background-image: url('../images/field-icons/ui-h3.png'); }
+#iwajax_contact li.icon-h4 { background-image: url('../images/field-icons/ui-h4.png'); }
+
+#iwajax_contact input.deleteFieldButton { background: url('../images/delete-button-grad.png') repeat-x; border-color: #992121; color: #fff; cursor: pointer; float: right; padding-left: 15px; padding-right: 15px; width: auto !important; }
+#iwajax_contact input.deleteFieldButton.disabled { cursor: default; opacity: 0.5; }
+#iwajax_contact input.addFieldButton { background: url('../images/add-button-grad.png') repeat-x; border-color: #057509; color: #fff; cursor: pointer; padding-left: 15px; padding-right: 15px; width: auto !important; }
+
+#iwajax_contact input.iwacf-checkbox { width: 25px; }
+#iwajax_contact p.border-bottom { border-bottom: 1px solid #ddd; padding-bottom: 15px; margin-bottom: 15px; }
+#iwajax_contact p.border-top { padding-top: 15px; border-top: 1px solid #ddd; margin-top: 15px; }
+
+#iwajax_contact_configuration p label { display: block; line-height: 20px; margin-bottom: 5px; }
+#iwajax_contact_configuration { margin-bottom: 15px; }
+
+ul.iwac-settings-tabs { background: transparent url('../images/settings-tabs-bg.gif') repeat-x bottom; list-style-type: none; margin-top: 20px; }
+ul.iwac-settings-tabs li { border: 1px solid #ccc; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; color: #333; cursor: pointer; display: inline-block; font-size: 10px; line-height: 30px; padding: 0 10px; margin: 0 2px 0 0; }
+ul.iwac-settings-tabs li.disabled { color: #999; cursor: default; }
+ul.iwac-settings-tabs li.selected { background-color: #fff; border-bottom: 1px solid #fff; color: #000; }
+
+div.iwac-settings-page { background-color: #fff; border-width: 0 1px 1px; border-style: solid; border-color: #ccc; padding: 10px 0 0; }
+div.iwac-settings-page table.form-table { margin: 0; }
+div.iwac-settings-page p, div.iwac-settings-page h3 { margin-left: 10px; margin-right: 10px; }
+div.iwac-settings-page p.submit {  background-color: #f5f5f5; border-top: 1px solid #ddd; margin: 10px 0 0; padding: 10px; text-align: right; }
+div.iwac-settings-page h3 { border-bottom: 1px solid #ddd; color: #666; padding-bottom: 10px; margin-bottom: 10px; margin-top: 10px; }
+
+div.iwac-settings-page.hidden { display: none; }
+
+th.manage-column.column-shortcode { width: 20%; }
+th.manage-column.column-fields { width: 10%; }
+th.manage-column.column-submissions { width: 15%; }
+
+div#iwajax_submission_tools ul.iwacontact-submission-buttons { margin-top: 15px; }
+div#iwajax_submission_tools ul.iwacontact-submission-buttons li { display: inline-block; margin-right: 5px; }
+
+div#iwajax_submission_details table.headers { background-color: #fff; border: 1px solid #ddd; box-shadow: 1px 2px 5px rgba(0,0,0,0.1); margin: 10px 0 20px; }
+
+div#iwajax_submission_details table.headers div.small { display: block; font-size: 0.9em; }
+
+div#iwajax_contact_email p { margin: 10px 2px !important; }
+
+div#iwajax_contact_shortcode p { margin: 10px 2px !important; text-align: center; }
+div#iwajax_contact_shortcode p input { text-align: center; }
+
+div#iwajax_contact_recent_submissions p.no-results { margin: 10px 2px !important; text-align: center; }
+div#iwajax_contact_recent_submissions ul.recent-submissions {  }
+div#iwajax_contact_recent_submissions ul.recent-submissions li.submission { margin: 10px 0; }
+div#iwajax_contact_recent_submissions ul.recent-submissions li.submission a {  }
+div#iwajax_contact_recent_submissions ul.recent-submissions li.submission span.date { color: #666; display: block; line-height: 20px; }

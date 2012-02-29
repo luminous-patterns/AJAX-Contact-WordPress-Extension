@@ -1,0 +1,38 @@
+
+div.iwajaxwpset-tabbed-settings ul.settings-tabs { background: transparent url("../images/tab-bar-bg.png") repeat-x bottom; list-style-type: none; margin-top: 10px; }
+div.iwajaxwpset-tabbed-settings ul.settings-tabs li { background: #f0f0f0 url("../images/tab-bg.png") repeat-x bottom; border: 1px solid #ccc; -moz-border-radius: 3px 3px 0 0; -webkit-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; color: #757575; cursor: pointer; display: inline-block; font-size: 10px; line-height: 30px; padding: 0 10px; margin: 0 2px 0 0; text-shadow: 0px 1px 0px rgba(255,255,255,0.9); }
+div.iwajaxwpset-tabbed-settings ul.settings-tabs li.disabled { color: #999; cursor: default; }
+div.iwajaxwpset-tabbed-settings ul.settings-tabs li.selected { background-color: #f9f9f9; background-image: none; border-bottom: 0px; color: #454545; line-height: 31px; }
+
+div.iwajaxwpset-settings-page div.iwajaxwpset-tabbed-settings ul.settings-tabs { margin-top: 0px; margin-bottom: 0px; }
+
+div.iwajaxwpset-tabbed-settings div.group { background-color: #fff; border-width: 0 1px 1px; border-style: solid; border-color: #ccc; padding: 0; }
+div.iwajaxwpset-tabbed-settings div.group table.form-table { margin: 0; }
+div.iwajaxwpset-tabbed-settings div.group p { margin-left: 10px; margin-right: 10px; }
+div.iwajaxwpset-tabbed-settings div.group p.submit {  background-color: #f5f5f5; border-top: 1px solid #ddd; margin: 10px 0 0; padding: 10px; text-align: right; }
+div.iwajaxwpset-tabbed-settings div.group h3 { border-bottom: 1px solid #ddd; cursor: pointer; color: #666; padding-bottom: 10px; padding-top: 10px; margin-bottom: 10px; margin-top: 0px; }
+
+div.iwajaxwpset-tabbed-settings div.group select[multiple='multiple'] { width: 25em; height: 6em !important; }
+div.iwajaxwpset-tabbed-settings div.group table.form-table td label { display: block; width: 25em; }
+
+div.iwajaxwpset-tabbed-settings div.group.hidden { display: none; }
+
+div.iwajaxwpset-settings-page div.iwajaxwpset-tabbed-settings div.group h3 {  }
+
+div.iwajaxwpset-tabbed-settings div.group div.image-container { border: 1px dashed #ddd; display: inline-block; margin-right: 10px; padding: 6px; }
+div.iwajaxwpset-tabbed-settings div.group div.image-container img { max-height: 128px; max-width: 500px; }
+
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector { background-color: #f5f5f5; border: 1px solid #ccc; border-radius: 3px; box-shadow: 1px 1px 5px rgba(0,0,0,0.15); left: 300px; position: absolute; width: 260px; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.top-bar { border-bottom: 1px solid #ddd; padding: 5px; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.top-bar p.search-box { float: none; margin: 0px !important; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.top-bar p.search-box input.search-input { width: 120px; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.image-attachment-list { background-color: #fff; max-height: 170px; overflow-y: auto; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.image-attachment-list ul li.no-results { color: #999; line-height: 30px; margin-bottom: 0px; padding: 10px; text-align: center; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.image-attachment-list ul li.image-attachment { border-bottom: 1px solid #ddd; margin-bottom: 0px; padding: 10px 10px 7px; position: relative; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.image-attachment-list ul li.image-attachment:hover { background-color: #eee; cursor: pointer; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.image-attachment-list ul li.image-attachment:last-of-type { border-bottom: none; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.image-attachment-list ul li.image-attachment img { height: 64px; width: 64px; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.image-attachment-list ul li.image-attachment span.title { left: 84px; max-width: 150px; overflow: hidden; position: absolute; text-overflow: ellipsis; top: 10px; white-space: nowrap; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.image-attachment-list ul li.image-attachment span.date { color: #999; font-size: 8pt; position: absolute; left: 84px; top: 30px; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.bottom-bar { border-top: 1px solid #ccc; padding: 5px; }
+div.iwajaxwpset-tabbed-settings div.image-attachment-selector div.bottom-bar input.upload-new-image { float: right; }

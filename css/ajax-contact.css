@@ -1,0 +1,18 @@
+form.iwacontact img.ajax-loading,
+form.iwacontact span.ajax-feedback,
+form.iwacontact span.ajax-result { display: none }
+form.iwacontact span.ajax-feedback,
+form.iwacontact span.ajax-result { background: transparent url('../images/tiny-success.png') no-repeat left center; color: #080; font-size: 8pt; font-weight: bold; margin: 2px 0 2px 5px; padding: 1px 3px 3px 19px }
+form.iwacontact span.ajax-feedback.error,
+form.iwacontact span.ajax-result.error { background: transparent url('../images/tiny-error.png') no-repeat left center; color: #800 }
+
+form.iwacontact ol.iwacontactform { list-style-type: none !important; margin-left: 0 !important }
+form.iwacontact ol.iwacontactform li { list-style-type: none !important; }
+form.iwacontact ol.iwacontactform label { display: block; margin: 2px }
+form.iwacontact ol.iwacontactform label.checkbox { display: inline; margin: 0 }
+form.iwacontact ol.iwacontactform input { margin: 4px 2px }
+form.iwacontact ol.iwacontactform input.error,
+form.iwacontact ol.iwacontactform textarea.error { border: 1px solid #F00 }
+form.iwacontact ol.iwacontactform input.input { width: 200px }
+
+form.iwacontact input.iwac_abval { border: none !important; height: 1px !important; width: 1px !important; margin: 0px !important; padding: 0px !important; }
