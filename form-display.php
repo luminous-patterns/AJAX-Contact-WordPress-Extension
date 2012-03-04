@@ -417,7 +417,7 @@ function iwacontact_submission_handler( $is_ajax = false ) {
 
 	$email_body = $first_line . "\n\n";
 	
-	$redirect = ( key_exists( 'iwacontact_redirect', $fields ) && trim( $fields['iwacontact_redirect'][0] ) != '' && key_exists( 'iwac_no_js', $_POST ) && $_POST['iwac_no_js'] == '1' ) ? $fields['iwacontact_redirect'][0] : null;
+	$redirect = ( key_exists( 'iwacontact_redirect', $fields ) && trim( $fields['iwacontact_redirect'][0] ) != '' ) ? $fields['iwacontact_redirect'][0] : null;
 	
 	$iwacontact_data = $fields['iwacontact_data'][0];
 	
