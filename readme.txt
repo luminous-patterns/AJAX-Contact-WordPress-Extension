@@ -3,7 +3,7 @@ Contributors: kounterfeit
 Tags: ajax form, contact, jquery, form, contact form, jquery form, ajax contact form, contact widget, widget, ajax widget, form widget, captcha, recaptcha, google recaptcha
 Requires at least: 3.0.0
 Tested up to: 3.3.0
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 
 Easily add AJAX contact forms to any page, post or widget area with an unlimited number of custom fields. Easy to manage and style!
 
@@ -111,6 +111,9 @@ You may be having trouble sending emails due to hosting restrictions, you might 
 * Enhanced multi-language support added by Martin Krcho (www.mojandroid.sk)
 * Slovak translations added by Martin Krcho (www.mojandroid.sk)
 
+= 2.0.2 =
+* Fix redirect
+
 = 2.0.1 =
 * Fix last update date on WordPress.org
 
@@ -173,6 +176,9 @@ You may be having trouble sending emails due to hosting restrictions, you might 
 
 = 2.0.3 =
 Update for improved multi-language support and Slovak translation by Martin Krcho (www.mojandroid.sk)
+
+= 2.0.2 =
+Fix for broken form redirect functionality
 
 = 2.0.1 =
 From v2 - Lots of core changes, custom email bodys, form submission logging, new anti-spam including Google ReCAPTCHA, better ajax handling, default settings and heaps more.  Worth the upgrade.
