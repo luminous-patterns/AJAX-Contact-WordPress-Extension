@@ -456,7 +456,7 @@ function iwacontact_submission_handler( $is_ajax = false ) {
 	
 	foreach ( $ordered_fields as $field ) {
 		
-		$the_field = new iwac_Form_Field( $field_vars );
+		$the_field = new iwac_Form_Field( $field );
 		$the_field->validate();
 
 		$email_body .= "\n\n$the_field->title\n" . $the_field->submitted_value;
