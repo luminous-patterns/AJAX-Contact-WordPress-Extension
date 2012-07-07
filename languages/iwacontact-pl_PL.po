@@ -1,0 +1,550 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ajax-contact\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-02-25 15:18+0100\n"
+"PO-Revision-Date: 2012-07-06 20:13+0100\n"
+"Last-Translator: Krzysztof Pałka <chris.palka@gmail.com>\n"
+"Language-Team: MojAndroid.sk <mojandroidsk@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;_n;__\n"
+"X-Poedit-Basepath: /Users/user/Localhost/beta/wp-content/plugins/ajax-contact/\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Language: Slovak\n"
+"X-Poedit-Country: SLOVAKIA\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ajax-settings.php:6
+msgid "AJAX Contact Settings"
+msgstr "Ustawienia formularza kontaktowego AJAX"
+
+#: ajax-settings.php:9
+msgid "AJAX Contact"
+msgstr "Formularz Kontaktowy AJAX"
+
+#: ajax-settings.php:18
+msgid "General"
+msgstr "Ogólne"
+
+#: ajax-settings.php:26
+msgid "Default From Address"
+msgstr "Domyślny adres nadawcy"
+
+#: ajax-settings.php:33
+msgid "Default To Address"
+msgstr "Domyślny adres odbiorcy"
+
+#: ajax-settings.php:40
+msgid "Default Subject"
+msgstr "Domyślny temat"
+
+#: ajax-settings.php:41
+msgid "New contact form submission!"
+msgstr "Nowa zapytanie z formularza kontaktowego!"
+
+#: ajax-settings.php:47
+msgid "Default Submit Button Text"
+msgstr "Domyślny tekst przycisku wysyłania"
+
+#: ajax-settings.php:48
+msgid "Send Enquiry"
+msgstr "Wyślij zapytanie"
+
+#: ajax-settings.php:54
+msgid "Default URL redirect on submission"
+msgstr "Domyślny URL do przekierowania po wysłaniu"
+
+#: ajax-settings.php:60
+msgid "Spam Prevention"
+msgstr "Ochrona przed spamem"
+
+#: ajax-settings.php:66
+msgid "Default Anti-bot Validation"
+msgstr "Domyślna walidacja przeciw botom"
+
+#: ajax-settings.php:70
+#: form-admin.php:117
+msgid "Honeypot"
+msgstr "Honeypot"
+
+#: ajax-settings.php:71
+#: form-admin.php:118
+msgid "Google ReCAPTCHA"
+msgstr "Google ReCAPTCHA"
+
+#: ajax-settings.php:79
+msgid "Enable by default"
+msgstr "Domyślnie włączone"
+
+#: ajax-settings.php:82
+msgid "Yes, enable Anti-bot Validation by default on new forms"
+msgstr "Tak, włącz domyślne zabezpieczenie przeciw botom na wszystkich nowych formularzach"
+
+#: ajax-settings.php:90
+msgid "ReCAPTCHA Public Key"
+msgstr "Publiczny klucz ReCATPCHA"
+
+#: ajax-settings.php:91
+#, php-format
+msgid "Enter your ReCAPTCHA Public Key here.  If you don't already have one, <a href=\"%1$s\" target=\"_blank\">click here to get one</a>"
+msgstr "Wprowadź tutaj Twój publiczny klucz do ReCAPTHCA. Jeśli go jeszcze nie masz, <a href=\"%1$s\" target=\"_blank\">kliknij tutaj</a>"
+
+#: ajax-settings.php:97
+msgid "ReCAPTCHA Private Key"
+msgstr "Prywatny klucz ReCATPCHA"
+
+#: ajax-settings.php:98
+msgid "Enter your ReCAPTCHA Private Key here."
+msgstr "Wprowadź tutaj Twój prywatny  klucz do ReCAPTHCA"
+
+#: form-admin.php:27
+msgid "Form Editor"
+msgstr "Edytor formularzy"
+
+#: form-admin.php:28
+msgid "Email Editor"
+msgstr "Edytorz maili"
+
+#: form-admin.php:31
+msgid "Form Configuration"
+msgstr "Konfiguracja formularza"
+
+#: form-admin.php:32
+msgid "Form Anti-Spam"
+msgstr "Konfiguracja anty-spamu"
+
+#: form-admin.php:33
+msgid "Form Shortcode"
+msgstr "Shortcode formularza"
+
+#: form-admin.php:34
+msgid "Recent Submissions"
+msgstr "Najnowsze zapytania"
+
+#: form-admin.php:39
+msgid "Submission Details"
+msgstr "Szczegóły zapytania"
+
+#: form-admin.php:40
+msgid "Submission Email Body"
+msgstr "Treść zapytania"
+
+#: form-admin.php:55
+#: form-admin.php:58
+#: form-admin.php:60
+#: form-admin.php:61
+#: form-admin.php:62
+#: form-admin.php:63
+#: form-admin.php:64
+msgid "Form saved."
+msgstr "Formularz został zapisany."
+
+#: form-admin.php:56
+msgid "Custom field saved."
+msgstr "Dodatkowe pole zostało zapisane."
+
+#: form-admin.php:57
+msgid "Custom field deleted."
+msgstr "Dodatkowe pole zostało usunięte."
+
+#: form-admin.php:108
+msgid "Enable Anti-Bot validation"
+msgstr "Włącz ochronę przeciw botom"
+
+#: form-admin.php:114
+msgid "Anti-Bot validation type"
+msgstr "Typ ochrony przeciw botom"
+
+#: form-admin.php:141
+msgid "You can specify a custom body for email notifications sent using this form."
+msgstr "Możesz ustawić własną treść maila dla powiadomień wysyłanych przez ten formularz"
+
+#: form-admin.php:147
+msgid "Use a custom email body"
+msgstr "Użyj własnej treści maila"
+
+#: form-admin.php:157
+#, php-format
+msgid "Include your field values by wrapping the <strong>Field ID</strong> in double percentage symbols.  E.g. to include the submitted value for a field with a Field ID of \"your_name\" you would use %%your_name%%"
+msgstr "Możesz użyć wartości pól formularza przez wstawienie <strong>Identyfikatora pola</strong> w podwójne znaki procentur. Np. aby wstawić pole o identyfikatorze \"imie_nazwisko\" powienineś użyć %%imie_nazwisko%%"
+
+#: form-admin.php:185
+msgid "Send Submissions To"
+msgstr "Wyślij zapytania do"
+
+#: form-admin.php:190
+msgid "From Address"
+msgstr "Adres nadawcy"
+
+#: form-admin.php:195
+msgid "Subject Line"
+msgstr "Temat wiadomości"
+
+#: form-admin.php:200
+msgid "Submit Button Text"
+msgstr "Treść przycisku wysyłania"
+
+#: form-admin.php:205
+msgid "URL redirect on submission"
+msgstr "Adres URL do przekierowania po wysłaniu"
+
+#: form-admin.php:226
+msgid "Use the shortcode to add this form to any post or page"
+msgstr "Możesz użyć tego shortcode, aby wstawić formularz w dowolny post"
+
+#: form-admin.php:251
+msgid "No submissions have been made using this form yet."
+msgstr "Nie ma jeszcze żadnych zapytań dla tego formularza."
+
+#: form-admin.php:260
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s w %2$s"
+
+#: form-admin.php:293
+msgid "Form Fields"
+msgstr "Pole formularza"
+
+#: form-admin.php:294
+msgid "Add New Field"
+msgstr "Dodaj nowe pole"
+
+#: form-admin.php:350
+msgid "Enter the default value for this field or leave empty for no default value."
+msgstr "Wprowadź domyślną wartość dla tego pola lub pozostaw puste"
+
+#: form-admin.php:351
+msgid "You may also use [[the_title]] or [[the_id]] to include the current post/page title or ID in the default field value."
+msgstr "Możesz również użyć kodów [[the_title]] lub [[the_id]] aby wstawić tytuł ora ID aktualnego posta/strony w wartość pola."
+
+#: form-admin.php:354
+msgid "Enter the options the user will be asked to select from, one option per line."
+msgstr "Wprowadź opcje do wyboru dla użytkownika, jedna opcja na linię."
+
+#: form-admin.php:355
+msgid "You may also use [[the_title]] or [[the_id]] to include the current post/page title or ID in an option."
+msgstr "Możesz również użyć kodów [[the_title]] lub [[the_id]] aby wstawić tytuł ora ID aktualnego posta/strony w opcji"
+
+#: form-admin.php:358
+msgid "The email address to send form submissions to"
+msgstr "Adres email na który zostaną wysłane zapytania"
+
+#: form-admin.php:361
+msgid "The email address submissions will appear to have been sent from"
+msgstr "Ten adres będzie podawany jako adres nadawcy"
+
+#: form-admin.php:364
+msgid "The subject line of form emails sent using this form"
+msgstr "Temat wiadomości dla zapytań wysłanych z tego pola"
+
+#: form-admin.php:367
+msgid "The submit button text for the form submit button"
+msgstr "Tekst dla przycisku wysyłania formularza"
+
+#: form-admin.php:370
+msgid "If you would like the user to be redirected to another url (e.g. Thank-you page) when they have submitted the form, enter the URL here"
+msgstr "Jeśli chciałbyś, aby użytkownik został przekierowany na inną stronę po wysłaniu formularza (np. na stronę z podziekowaniami), wprowadź adres tej strony tutaj"
+
+#: form-admin.php:373
+msgid "Copy and paste this short code in to the body of any page or post to embed this form in that location"
+msgstr "Skopiuj i wklej shortcode w treść dowolnej strony lub posta, aby wyświetlić tam formularz"
+
+#: form-admin.php:374
+msgid "Don't forget to use http:// if external to this website"
+msgstr "Nie zapomnij o http:// jeśli podajesz zewnętrzny adres URL"
+
+#: form-admin.php:421
+msgid "Submitted on"
+msgstr "Dodane"
+
+#: form-admin.php:425
+msgid "Contact Form"
+msgstr "Formularz kontaktowy"
+
+#: form-admin.php:429
+#: functions.php:23
+msgid "Edit Form"
+msgstr "Edytuj formularz"
+
+#: form-admin.php:429
+msgid "View Submissions"
+msgstr "Zobacz zapytania"
+
+#: form-admin.php:580
+#: form-admin.php:600
+msgid "New Field"
+msgstr "Nowe pole"
+
+#: form-admin.php:585
+msgid "Required"
+msgstr "Wymagane"
+
+#: form-admin.php:608
+#: form-admin.php:615
+#: form-admin.php:629
+msgid "Default Value <span class=\"iwacf-help help-default\"></span>"
+msgstr "Domyślna wartość <span class=\"iwacf-help help-default\"></span>"
+
+#: form-admin.php:620
+msgid "Options (1 per line) <span class=\"iwacf-help help-options\"></span>"
+msgstr "Opcje (1 w linii) <span class=\"iwacf-help help-options\"></span>"
+
+#: form-admin.php:634
+msgid "Field Editor"
+msgstr "Edytor pól"
+
+#: form-admin.php:636
+msgid "Field Title"
+msgstr "Tytuł pola"
+
+#: form-admin.php:640
+msgid "Field ID"
+msgstr "ID pola"
+
+#: form-admin.php:644
+msgid "Field Type"
+msgstr "Typ pola"
+
+#: form-admin.php:654
+msgid "Display Order"
+msgstr "Kolejność wyświetlania"
+
+#: form-admin.php:658
+msgid "Validator"
+msgstr "Walidator"
+
+#: form-admin.php:666
+msgid "Field required"
+msgstr "Pole wymagane"
+
+#: form-admin.php:670
+msgid "Show label"
+msgstr "Pokazuj opis"
+
+#: form-admin.php:673
+msgid "Delete Field"
+msgstr "Usuń pole"
+
+#: form-admin.php:693
+msgid "Normal Fields"
+msgstr "Normalne pola"
+
+#: form-admin.php:694
+msgid "Text Input"
+msgstr "Pole tekstowe"
+
+#: form-admin.php:695
+msgid "Text Input (Password)"
+msgstr "Pole tekstowe (hasło)"
+
+#: form-admin.php:696
+msgid "Text Input (Multi-Line)"
+msgstr "Pole tekstowe (wielo-linijkowe)"
+
+#: form-admin.php:697
+msgid "Text Input (Read-Only)"
+msgstr "Pole tekstowe (tylko do odczytu)"
+
+#: form-admin.php:698
+msgid "Select Box"
+msgstr "Pole wyboru"
+
+#: form-admin.php:699
+msgid "Select Box (Multiple)"
+msgstr "Pole wielokrotnego wyboru"
+
+#: form-admin.php:700
+msgid "Check Box"
+msgstr "Check box"
+
+#: form-admin.php:701
+msgid "Radio Buttons"
+msgstr "Przyciski radio"
+
+#: form-admin.php:702
+msgid "Hidden Field"
+msgstr "Pole ukryte"
+
+#: form-admin.php:703
+msgid "File Upload"
+msgstr "Upload pliku"
+
+#: form-admin.php:714
+msgid "Headings"
+msgstr "Nagłowki"
+
+#: form-admin.php:715
+msgid "Heading 1"
+msgstr "Nagłówek 1"
+
+#: form-admin.php:716
+msgid "Heading 2"
+msgstr "Nagłówek 2"
+
+#: form-admin.php:717
+msgid "Heading 3"
+msgstr "Nagłówek 3"
+
+#: form-admin.php:718
+msgid "Heading 4"
+msgstr "Nagłówek 4"
+
+#: form-admin.php:767
+#: form-admin.php:850
+#: functions.php:52
+msgid "Submissions"
+msgstr "Zapytania"
+
+#: form-admin.php:768
+msgid "Fields"
+msgstr "Pola"
+
+#: form-admin.php:769
+msgid "Short code"
+msgstr "Short code"
+
+#: form-admin.php:819
+#, php-format
+msgid "View Submissions (%1$d)"
+msgstr "Zobacz zapytania (%1$d)"
+
+#: form-display.php:67
+#: functions.php:89
+msgid "This field is required"
+msgstr "To pole jest wymagane"
+
+#: form-display.php:71
+#: functions.php:90
+msgid "Please enter a valid email address"
+msgstr "Proszę podać prawidłowy adres email"
+
+#: form-display.php:251
+#: functions.php:91
+msgid "Your message has been sent successfully!"
+msgstr "Twoja wiadomość została wysłana. Dziękujemy!"
+
+#: form-display.php:386
+msgid "Invalid CAPTCHA, please try again."
+msgstr "Niepoprawna CAPTCHA. Spróbuj ponownie."
+
+#: form-display.php:416
+#, php-format
+msgid "There has been a new contact form submission at %1$s"
+msgstr "Nowe zapytanie z formularza zostało dodane do %1$s"
+
+#: form-display.php:452
+#, php-format
+msgid "You left a required field <span>%1$s</strong> empty"
+msgstr "Zapomniałeś uzupełnić pole <span>%1$s</strong>"
+
+#: form-display.php:454
+#, php-format
+msgid "Invalid email address provided for <span>%1$s</strong>"
+msgstr "W polu <span>%1$s</strong> został podany nieprawidłowy adres email"
+
+#: functions.php:17
+msgid "All Forms"
+msgstr "Wszystkie formularze"
+
+#: functions.php:18
+msgid "Forms"
+msgstr "Formularze"
+
+#: functions.php:19
+msgid "Form"
+msgstr "Formularz"
+
+#: functions.php:20
+#: functions.php:21
+msgid "Add New Form"
+msgstr "Dodaj nowy formularz"
+
+#: functions.php:22
+#: functions.php:56
+msgid "Edit"
+msgstr "Edytuj"
+
+#: functions.php:24
+msgid "New Form"
+msgstr "Nowy formularz"
+
+#: functions.php:25
+#: functions.php:59
+msgid "View"
+msgstr "Wyświetl"
+
+#: functions.php:26
+msgid "View Form"
+msgstr "Wyświetl formularz"
+
+#: functions.php:27
+msgid "Search Forms"
+msgstr "Szukaj formularzy"
+
+#: functions.php:28
+msgid "No forms found"
+msgstr "Nie znaleziono żadnych formularzy"
+
+#: functions.php:29
+msgid "No forms found in Trash"
+msgstr "Nie znaleziono żadnych formularzy w Koszu"
+
+#: functions.php:30
+msgid "Contact Forms"
+msgstr "Formularze"
+
+#: functions.php:32
+msgid "AJAX Contact Forms"
+msgstr "Formularze kontaktowe AJAX"
+
+#: functions.php:51
+msgid "All Submissions"
+msgstr "Wszystkie zapytania"
+
+#: functions.php:53
+msgid "Submission"
+msgstr "Zapytania"
+
+#: functions.php:54
+msgid "Add New"
+msgstr "Dodaj nowe"
+
+#: functions.php:55
+msgid "Add New Submission"
+msgstr "Dodaj nowe zapytanie"
+
+#: functions.php:57
+msgid "Edit Submission"
+msgstr "Edytuj zapytanie"
+
+#: functions.php:58
+msgid "New Submission"
+msgstr "Nowe zapytanie"
+
+#: functions.php:60
+msgid "View Submission"
+msgstr "Zobacz zapytanie"
+
+#: functions.php:61
+msgid "Search Submissions"
+msgstr "Szukaj zapytanie"
+
+#: functions.php:62
+msgid "No submissions found"
+msgstr "Nie znaleziono żadnych zapytań"
+
+#: functions.php:63
+msgid "No submissions found in Trash"
+msgstr "Nie znaleziono żadnych zapytań w Koszu"
+
+#: functions.php:65
+msgid "AJAX Contact Form Submissions"
+msgstr "Zapytania z formularza kontaktowego"
+
+#: functions.php:88
+msgid "There was an error processing your request"
+msgstr "Wystąpił błąd przy wysyłaniu zapytania"
+

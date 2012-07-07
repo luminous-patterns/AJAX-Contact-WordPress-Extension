@@ -2,7 +2,7 @@
 Contributors: kounterfeit 
 Tags: ajax form, contact, jquery, form, contact form, jquery form, ajax contact form, contact widget, widget, ajax widget, form widget, captcha, recaptcha, google recaptcha
 Requires at least: 3.0.0
-Tested up to: 3.3.0
+Tested up to: 3.4.1
 Stable tag: 2.0.3
 
 Easily add AJAX contact forms to any page, post or widget area with an unlimited number of custom fields. Easy to manage and style!
@@ -16,6 +16,7 @@ Easily add AJAX contact forms to any page, post or widget area with an unlimited
 <ul>
 <li>Main Features
   <ul>
+    <li>SSL Support</li>
     <li>Unlimited number of fields</li>
     <li>jQuery AJAX Validation/Submission</li>
     <li>Degrades gracefully with JavaScript off</li>
@@ -40,6 +41,7 @@ Easily add AJAX contact forms to any page, post or widget area with an unlimited
         <ul>
             <li>English</li>
             <li>Slovak by Martin Krcho (www.mojandroid.sk)</li>
+            <li>Polish by Krzysztof Pałka</li>
         </ul>
     </li>
   </ul>
@@ -64,7 +66,7 @@ Easily add AJAX contact forms to any page, post or widget area with an unlimited
 <li>Built for WordPress 3.0+</li>
 </ul>
 
-<p>This addon was developed by <a href = 'http://www.mycetophorae.com'>Callan Milne</a>. Feel free to get in contact with me with any feedback or feature requests.</p>
+<p>This addon was developed by <a href = 'http://www.integratedweb.com.au'>Integrated Web Services</a>. Feel free to get in contact with us with any feedback or feature requests.</p>
 
 == Installation ==
 
@@ -107,9 +109,14 @@ You may be having trouble sending emails due to hosting restrictions, you might 
 
 == Changelog ==
 
+= 2.0.4 =
+* Fixed SSL bug in wp-admin
+* Fixed SSL detection for Google ReCAPTCHA
+* Polish translation added by Krzysztof Pałka
+
 = 2.0.3 =
 * Enhanced multi-language support added by Martin Krcho (www.mojandroid.sk)
-* Slovak translations added by Martin Krcho (www.mojandroid.sk)
+* Slovak translation added by Martin Krcho (www.mojandroid.sk)
 
 = 2.0.2 =
 * Fix redirect

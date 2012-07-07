@@ -209,7 +209,7 @@ if ( !class_exists( 'IWAJAX_WPSet' ) ) {
 		 * @return string The public url to the current directory.
 		 **/
 		private function _getCurrentDirectoryUrl() {
-			return home_url( $this->_getCurrentWPDir() );
+			return home_url( $this->_getCurrentWPDir(), is_ssl() );
 		}
 		
 		/**
