@@ -21,7 +21,8 @@ function iwacontact_get_contact_form( $post_id ) {
 	
 	if ( key_exists( 'iwacontact_data', $fields ) ) {
 		
-		$form = '<form action="' . $_SERVER['REQUEST_URI'] . '" class="iwacontact" method="post"><ol class="iwacontactform">';
+		$form = '<form action="' . $_SERVER['REQUEST_URI'] . '" class="iwacontact" method="post">'
+			. '<ol class="iwacontactform">';
 		
 		$iwacontact_data = $fields['iwacontact_data'][0];
 		
@@ -201,6 +202,18 @@ function iwacontact_get_contact_form( $post_id ) {
 						. '</li>';
 					break;
 				
+				case 'singlefile' :
+					
+					$class = 'input read-only';
+					$default_value = ( $submitted_value != null ) ? $submitted_value : $field_vars['fieldoptions'];
+					
+					$form .= '<li>'
+						. ( ( $show_label ) ? '<label for="' . $field_id . '">' . $field_vars['fieldname'] . '</label>' : '' )
+						. '<input type="file" name="' . $field_id . '" id="' . $field_id . '" value="' . $default_value . '" class="' . $class . '" />'
+						. ( ( $field_error != null ) ? $field_error : '' )
+						. '</li>';
+					break;
+				
 				case 'h1' :
 					
 					$class = '';
@@ -240,6 +253,13 @@ function iwacontact_get_contact_form( $post_id ) {
 						. '<h4 class="' . $class . '">' . $field_vars['fieldname'] . '</h4>'
 						. '</li>';
 					break;
+
+				default :
+
+					$default_value = ( $submitted_value != null ) ? $submitted_value : $field_vars['fieldoptions'];
+					do_action( 'iwacontact_display_' . $field_vars['fieldtype'] . '_field', $field_vars, $default_value );
+					break;
+
 			}
 		}
 		
@@ -272,7 +292,8 @@ function iwacontact_get_contact_form( $post_id ) {
 			. "<input type='hidden' name='action' value='iwajax_submit' />"
 			. '<img class="ajax-loading" src="' . plugin_dir_url( __FILE__ ) . 'images/ajax-loading.gif" alt="Loading ..." height="20" width="20" />'
 			. '</li>'
-			. '</ol><!-- .form --></form><!-- #contactform -->';
+			. '</ol><!-- .form -->'
+			. '</form><!-- #contactform -->';
 		
 		return $form;
 	}
@@ -435,27 +456,11 @@ function iwacontact_submission_handler( $is_ajax = false ) {
 	
 	foreach ( $ordered_fields as $field ) {
 		
-		$field_vars = array(
-			'element_id' => $field[0],
-			'displayorder' => $field[1],
-			'fieldtype' => $field[2],
-			'fieldname' => $field[3],
-			'fieldoptions' => $field[4],
-			'fieldrequired' => $field[5],
-			'fieldvalidation' => $field[6]
-		);
+		$the_field = new iwac_Form_Field( $field_vars );
+		$the_field->validate();
 
-		$field_name = $field_vars['fieldname'];
-		$submitted_value = ( is_array( $_POST[$field_vars['element_id']] ) ) ? implode( ', ', $_POST[$field_vars['element_id']] ) : trim( $_POST[$field_vars['element_id']] );
-		
-		if ( '1' == $field_vars['fieldrequired'] && !is_array( $submitted_value ) && '' == $submitted_value )
-			throw new Exception( sprintf( __( 'You left a required field <span>%1$s</strong> empty', 'iwacontact' ), $field_name ), 1 );
-		elseif ( 'email' == $field_vars['fieldvalidation'] && !preg_match( '/^[A-Z0-9._%-]+@[A-Z0-9._%-]+.[A-Z]{2,4}$/i', $submitted_value ) ) 
-			throw new Exception( sprintf( __( 'Invalid email address provided for <span>%1$s</strong>', 'iwacontact' ), $field_name ), 1 );
-		
-		$email_body .= "\n\n$field_name:\n" . $submitted_value;
-		$field_vars['submittedvalue'] = $submitted_value;
-		$completed_fields[] = $field_vars;
+		$email_body .= "\n\n$the_field->title\n" . $the_field->submitted_value;
+		$completed_fields[] = $the_field;
 		
 	}
 	
@@ -472,6 +477,35 @@ function iwacontact_submission_handler( $is_ajax = false ) {
 	// Filter the email subject and body
 	$subject = apply_filters( 'iwacontact_email_subject', $subject, $completed_fields );
 	$email_body = apply_filters( 'iwacontact_email_body', $email_body, $completed_fields );
+	
+	// Add the submission
+	$submission_id = iwacontact_new_submission( $_POST['iwac_form_id'], $subject, $email_to, $from, serialize( $completed_fields ), $email_body, $headers );
+
+	// Send submission
+	if ( iwacontact_send_submission( $submission_id ) )
+		update_post_meta( $submission_id, '_sent', '1' );
+	
+	return array(
+		'success' => true,
+		'redirect' => $redirect
+	);
+
+}
+
+/**
+ * New submission
+ * 
+ * @param integer $form_id Form ID
+ * @param string $subject The submission subject
+ * @param string $to To email address
+ * @param string $from From email address
+ * @param string $data Serialized form data
+ * @param string $body Email body
+ * @param string $headers Email headers
+ * @return integer Submission ID
+ * @since 2.1.0
+ */
+function iwacontact_new_submission( $form_id, $subject, $to, $from, $data, $body, $headers ) {
 
 	// Insert a submission post for this submission
 	$submission_id = wp_insert_post( array(
@@ -482,31 +516,51 @@ function iwacontact_submission_handler( $is_ajax = false ) {
 	) );
 
 	// Set submission details using post meta
-	update_post_meta( $submission_id, '_form_id',         $_POST['iwac_form_id'] );
+	update_post_meta( $submission_id, '_form_id',         $form_id );
 	update_post_meta( $submission_id, '_read_before',     '0' );
 	update_post_meta( $submission_id, '_sent',            '0' );
 	update_post_meta( $submission_id, '_copy_sent',       '0' );
-	update_post_meta( $submission_id, '_mail_to',         $email_to );
+	update_post_meta( $submission_id, '_mail_to',         $to );
 	update_post_meta( $submission_id, '_mail_from',       $from );
 	update_post_meta( $submission_id, '_mail_subject',    $subject );
-	update_post_meta( $submission_id, '_form_data',       serialize( $completed_fields ) );
-	update_post_meta( $submission_id, '_email_body',      $email_body );
-	
-	// Send email using wp_mail()
-	if ( wp_mail( $email_to, $subject, $email_body, $headers ) )
-		update_post_meta( $submission_id, '_sent', '1' );
-	
-	// Send copy
-	if ( key_exists( 'send_copy', $_POST ) && $_POST['send_copy'] == 'true' ) {
-		$subject = 'Your email to ' . get_bloginfo( 'name' );
-		$headers = 'From: ' . get_bloginfo( 'name' ) . " <$from>";
-		if ( wp_mail( $email, $subject, $email_body, $headers ) )
-			update_post_meta( $submission_id, '_copy_sent', '1' );
-	}
-	
-	return array(
-		'success' => true,
-		'redirect' => $redirect
+	update_post_meta( $submission_id, '_form_data',       $data );
+	update_post_meta( $submission_id, '_email_body',      $body );
+	update_post_meta( $submission_id, '_headers',         $headers );
+
+	// Return the submission ID
+	return $submission_id;
+
+}
+
+/**
+ * Send submission
+ * 
+ * @param integer $submission_id Submission ID
+ * @param string $to Custom to address
+ * @param string $subject Custom email subject
+ * @return boolean True on success
+ * @since 2.1.0
+ */
+function iwacontact_send_submission( $submission_id, $to = null, $subject = null ) {
+
+	$fields = get_post_custom( $submission_id );
+
+	$submission = array(
+		'email_to'       => $fields['_mail_to'][0],
+		'subject'        => $fields['_mail_subject'][0],
+		'email_body'     => $fields['_email_body'][0],
+		'headers'        => $fields['_headers'][0]
 	);
+
+	if ( null !== $to )
+		$submission['email_to'] = $to;
+
+	if ( null !== $subject )
+		$submission['subject'] = $subject;
+
+	$from = $fields['_mail_from'][0];
+	$headers = 'From: ' . get_bloginfo( 'name' ) . " <$from>\r\nReply-To: $from";
+
+	return wp_mail( $submission['email_to'], $submission['subject'], $submission['email_body'], $submission['headers'] );
 
 }

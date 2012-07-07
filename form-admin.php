@@ -691,16 +691,16 @@ function iwacontact_fieldtype_options( $selected_option ) {
 	$field_type_groups = array(
 		
 		__( 'Normal Fields', 'iwacontact' )   => array(
-			'input'       => array( __( 'Text Input', 'iwacontact' ),               true ),
-			'password'    => array( __( 'Text Input (Password)', 'iwacontact' ),    true ),
-			'textarea'    => array( __( 'Text Input (Multi-Line)', 'iwacontact' ),  true ),
-			'readonly'    => array( __( 'Text Input (Read-Only)', 'iwacontact' ),   true ),
-			'selectbox'   => array( __( 'Select Box', 'iwacontact' ),               true ),
-			'multiselect' => array( __( 'Select Box (Multiple)', 'iwacontact' ),    true ),
-			'checkbox'    => array( __( 'Check Box', 'iwacontact' ),                true ),
-			'radio'       => array( __( 'Radio Buttons', 'iwacontact' ),            true ),
-			'hidden'      => array( __( 'Hidden Field', 'iwacontact' ),             true ),
-			'file'        => array( __( 'File Upload', 'iwacontact' ),              false )
+			'input'         => array( __( 'Text Input', 'iwacontact' ),               true ),
+			'password'      => array( __( 'Text Input (Password)', 'iwacontact' ),    true ),
+			'textarea'      => array( __( 'Text Input (Multi-Line)', 'iwacontact' ),  true ),
+			'readonly'      => array( __( 'Text Input (Read-Only)', 'iwacontact' ),   true ),
+			'selectbox'     => array( __( 'Select Box', 'iwacontact' ),               true ),
+			'multiselect'   => array( __( 'Select Box (Multiple)', 'iwacontact' ),    true ),
+			'checkbox'      => array( __( 'Check Box', 'iwacontact' ),                true ),
+			'radio'         => array( __( 'Radio Buttons', 'iwacontact' ),            true ),
+			'hidden'        => array( __( 'Hidden Field', 'iwacontact' ),             true ),
+			'singlefile'    => array( __( 'File Upload', 'iwacontact' ),              true )
 		),
 		
 		// 'Special Fields'  => array(
@@ -712,10 +712,10 @@ function iwacontact_fieldtype_options( $selected_option ) {
 		// ),
 		
 		__( 'Headings', 'iwacontact' )        => array(
-			'h1'          => array( __( 'Heading 1', 'iwacontact' ),                true ),
-			'h2'          => array( __( 'Heading 2', 'iwacontact' ),                true ),
-			'h3'          => array( __( 'Heading 3', 'iwacontact' ),                true ),
-			'h4'          => array( __( 'Heading 4', 'iwacontact' ),                true )
+			'h1'           => array( __( 'Heading 1', 'iwacontact' ),                true ),
+			'h2'           => array( __( 'Heading 2', 'iwacontact' ),                true ),
+			'h3'           => array( __( 'Heading 3', 'iwacontact' ),                true ),
+			'h4'           => array( __( 'Heading 4', 'iwacontact' ),                true )
 		)
 
 	);
